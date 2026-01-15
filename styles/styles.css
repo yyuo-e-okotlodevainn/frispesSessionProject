@@ -298,29 +298,40 @@ body {
 }
 
 @media (max-width: 992px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 20px;
+    }
+
     .header-container {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        gap: 15px;
+        align-items: center;
+        height: auto;
+        gap: 20px 0;
     }
 
     .mobile-burger {
         display: flex;
+        order: 1;
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    .auth-buttons {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        margin-left: 0;
     }
 
     .nav-menu {
         display: none;
-    }
-
-    .auth-buttons {
-        flex-direction: column;
-        gap: 8px;
-        margin-left: auto;
-    }
-
-    .btn-login, .btn-signup {
-        width: 100px;
-        height: 35px;
-        font-size: 14px;
     }
 
     .page-main-content {
@@ -351,25 +362,21 @@ body {
     body {
         margin-left: 15px;
         margin-right: 15px;
-        padding-top: 30px;
-    }
-
-    .logo {
-        font-size: 20px;
     }
 
     .page-title {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .page-description {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 32px;
+        line-height: 42px;
     }
 
     .booking-card {
         padding: 30px 20px;
         height: auto;
+    }
+
+    .btn-login, .btn-signup {
+        width: 45%;
+        height: 40px;
+        font-size: 14px;
     }
 }
