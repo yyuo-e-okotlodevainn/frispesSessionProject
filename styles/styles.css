@@ -25,6 +25,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .header-hidden {
@@ -37,6 +40,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 43px;
+    max-width: 100%;
 }
 
 .mobile-burger {
@@ -47,6 +51,7 @@ body {
     height: 18px;
     cursor: pointer;
     z-index: 3;
+    flex-shrink: 0;
 }
 
 .mobile-burger span {
@@ -64,6 +69,7 @@ body {
     color: #10375C;
     text-decoration: none;
     z-index: 2;
+    flex-shrink: 0;
 }
 
 .nav-menu {
@@ -94,6 +100,7 @@ body {
     display: flex;
     align-items: center;
     z-index: 2;
+    flex-shrink: 1;
 }
 
 .btn-login {
@@ -309,27 +316,31 @@ body {
 
     .header-container {
         justify-content: flex-start;
-        gap: 15px;
+        gap: 12px;
         padding: 10px 0;
+        width: 100%;
     }
 
     .mobile-burger {
         display: flex;
+        flex-shrink: 0;
     }
 
     .logo {
-        font-size: 20px;
+        font-size: 18px;
+        flex-shrink: 0;
     }
 
     .auth-buttons {
         margin-left: auto;
+        gap: 5px;
     }
 
     .btn-login, .btn-signup {
         width: auto;
-        padding: 0 10px;
-        height: 32px;
-        font-size: 13px;
+        padding: 0 8px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .nav-menu {
@@ -337,7 +348,7 @@ body {
     }
 
     .page-intro {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .page-main-content {
@@ -348,7 +359,7 @@ body {
     .page-visual-section {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     .booking-card {
