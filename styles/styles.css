@@ -26,7 +26,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: auto;
 }
 
 .header-hidden {
@@ -34,12 +34,11 @@ body {
 }
 
 .header-container {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 43px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .mobile-burger {
@@ -306,16 +305,6 @@ body {
     display: block;
 }
 
-@media (max-width: 1200px) {
-    body {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    .page-image-container {
-        margin-right: -40px;
-    }
-}
-
 @media (max-width: 992px) {
     body {
         margin-left: 15px;
@@ -323,14 +312,13 @@ body {
         padding-top: 10px;
     }
 
+    .header-fixed {
+        padding: 0 15px;
+    }
+
     .header-container {
         justify-content: flex-start;
         gap: 12px;
-        padding: 0;
-    }
-
-    .header-fixed {
-        padding: 0 15px;
     }
 
     .mobile-burger {
@@ -358,7 +346,7 @@ body {
     }
 
     .page-intro {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .page-main-content {
