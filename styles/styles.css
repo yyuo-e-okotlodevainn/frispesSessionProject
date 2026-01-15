@@ -299,32 +299,47 @@ body {
 
 @media (max-width: 992px) {
     .header-container {
-        justify-content: flex-start;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 15px;
     }
+
     .mobile-burger {
         display: flex;
     }
+
     .nav-menu {
         display: none;
     }
+
     .auth-buttons {
+        flex-direction: column;
+        gap: 8px;
         margin-left: auto;
     }
+
+    .btn-login, .btn-signup {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
     .page-main-content {
         flex-direction: column;
         gap: 20px;
     }
+
     .page-visual-section {
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 40px;
     }
+
     .booking-card {
         width: 100%;
         max-width: 445px;
         margin-top: 0;
     }
+
     .page-image-container {
         margin: 0 0 20px 0;
         width: 100%;
@@ -334,57 +349,27 @@ body {
 
 @media (max-width: 480px) {
     body {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .page-title {
-        font-size: 32px;
-        line-height: 42px;
-    }
-    .booking-card {
-        padding: 30px 20px;
-        height: auto;
-    }
-}
-
-@media (max-width: 360px) {
-    body {
         margin-left: 15px;
         margin-right: 15px;
-        padding-top: 20px;
-    }
-
-    .header-container {
-        gap: 10px;
+        padding-top: 30px;
     }
 
     .logo {
         font-size: 20px;
     }
 
-    .auth-buttons {
-        gap: 5px;
-    }
-
-    .btn-login, 
-    .btn-signup {
-        width: auto;
-        padding: 0 10px;
-        font-size: 14px;
-        height: 36px;
-    }
-
-    .btn-signup {
-        min-width: 80px;
-    }
-
     .page-title {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .page-description {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .booking-card {
-        padding: 20px 15px;
+        padding: 30px 20px;
+        height: auto;
     }
 }
-
