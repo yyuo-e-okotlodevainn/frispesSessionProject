@@ -306,28 +306,34 @@ body {
 
     .header-container {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        height: auto;
-        gap: 20px 0;
+        height: 50px;
+        gap: 10px;
     }
 
     .mobile-burger {
         display: flex;
-        order: 1;
+        flex-shrink: 0;
     }
 
     .logo {
-        order: 2;
+        font-size: 20px;
+        flex-shrink: 0;
     }
 
     .auth-buttons {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
         margin-left: 0;
+    }
+
+    .btn-login, .btn-signup {
+        width: auto;
+        padding: 0 10px;
+        height: 32px;
+        font-size: 13px;
     }
 
     .nav-menu {
@@ -364,19 +370,27 @@ body {
         margin-right: 15px;
     }
 
+    .logo {
+        font-size: 18px;
+    }
+
+    .auth-buttons {
+        gap: 5px;
+    }
+
+    .btn-login, .btn-signup {
+        padding: 0 8px;
+        font-size: 12px;
+        height: 30px;
+    }
+
     .page-title {
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .booking-card {
         padding: 30px 20px;
         height: auto;
-    }
-
-    .btn-login, .btn-signup {
-        width: 45%;
-        height: 40px;
-        font-size: 14px;
     }
 }
