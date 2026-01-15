@@ -10,30 +10,6 @@
     <title>Frispes</title>
 </head>
 
-<script>
-    let lastScroll = 0;
-    const header = document.querySelector(".header");
-
-    window.addEventListener("scroll", () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll <= 0) {
-            header.classList.remove("header-fixed", "header-hidden");
-            return;
-        }
-
-        header.classList.add("header-fixed");
-
-        if (currentScroll > lastScroll && !header.classList.contains("header-hidden")) {
-            header.classList.add("header-hidden");
-        } else if (currentScroll < lastScroll && header.classList.contains("header-hidden")) {
-            header.classList.remove("header-hidden");
-        }
-        
-        lastScroll = currentScroll;
-    });
-</script>
-    
 <body>
 
 <header class="header">
@@ -120,6 +96,31 @@
     </div>
 </section>
 
+<script>
+    let lastScroll = 0;
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+            header.classList.remove("header-fixed", "header-hidden");
+            return;
+        }
+
+        header.classList.add("header-fixed");
+
+        if (currentScroll > lastScroll && !header.classList.contains("header-hidden")) {
+            header.classList.add("header-hidden");
+        } else if (currentScroll < lastScroll && header.classList.contains("header-hidden")) {
+            header.classList.remove("header-hidden");
+        }
+        
+        lastScroll = currentScroll;
+    });
+</script>
+    
 </body>
 
 </html>
+
