@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    margin-left: 165px;
+    margin-right: 165px;
+    padding-top: 56px;
+    padding-bottom: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 43px;
+}
+
+.mobile-burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.mobile-burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #10375C;
+    border-radius: 2px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #10375C;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.nav-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #555;
+    border-bottom: 2px solid #FF5722;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92px;
+    height: 43px;
+    font-family: 'Lato', sans-serif;
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    text-decoration: underline;
+}
+
+.btn-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 103px;
+    height: 43px;
+    font-family: 'Lato', sans-serif;
+    background-color: #FF5722;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    box-shadow: 0px 8px 15px rgba(255, 87, 34, 0.4);
+}
+
+.btn-signup:hover {
+    background-color: white;
+    color: #FF5722;
+    border-color: #FF5722;
+    box-shadow: none;
+}
+
+.page-intro {
+    margin-top: 56px;
+}
+
+.intro-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #222831;
+}
+
+.intro-line {
+    width: 73px;
+    height: 2px;
+    background-color: #222831;
+}
+
+.page-main-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 61px;
+    padding-top: 8px;
+}
+
+.page-title {
+    font-family: 'Lora', serif;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 67px;
+    color: #10375C;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.page-title .highlight {
+    color: #DD2C00;
+}
+
+.page-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6A6A6A;
+    max-width: 382px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.page-visual-section {
+    position: relative;
+    margin-top: -15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.booking-card {
+    position: relative;
+    width: 445px;
+    height: 459px;
+    background-color: #10375C;
+    padding: 42px 40px 31px 40px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: 80px;
+}
+
+.booking-title {
+    font-family: 'Lora', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 29px 0;
+    line-height: 1.2;
+}
+
+.select-field {
+    width: 100%;
+    height: 68px;
+    background-color: #0D2C4A;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.select-field-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.input-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #617689;
+    line-height: 1;
+}
+
+.select-value {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1;
+}
+
+.arrow-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-arrow {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-find {
+    width: 100%;
+    height: 53px;
+    margin-top: 6px;
+    background-color: #FF5722;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-find:hover {
+    background-color: transparent;
+    color: #FF5722;
+    border-color: #FF5722;
+}
+
+.page-image-container {
+    margin-left: -130px;
+    margin-right: -165px;
+    flex-grow: 1;
+    z-index: 1;
+}
+
+.page-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    body {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .page-image-container {
+        margin-right: -40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-container {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .mobile-burger {
+        display: flex;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .auth-buttons {
+        margin-left: auto;
+    }
+    .page-main-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .page-visual-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .booking-card {
+        width: 100%;
+        max-width: 445px;
+        margin-top: 0;
+    }
+    .page-image-container {
+        margin: 0 0 20px 0;
+        width: 100%;
+        max-width: 445px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .page-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .booking-card {
+        padding: 30px 20px;
+        height: auto;
+    }
+}
